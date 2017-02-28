@@ -4,10 +4,9 @@ jdk:
     - openjdk8
     - oraclejdk8
 
-
 env:
   global:
-    - MONGODB_VERSION=2.6.10
+    - MONGODB_VERSION=2.6.12
 
 before_install:
     # get and install mongodb, set MONGOD to the mongod executable
