@@ -1,3 +1,7 @@
+# need to switch to travis trusty (ubuntu 14) images to use openjdk8
+dist: trusty
+sudo: false
+
 language: java
 
 jdk:
