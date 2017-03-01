@@ -26,6 +26,7 @@ install:
 script:
     - cp -n test.cfg.example test.cfg
     - sed -i 's/^test.mongo.exe.*/test.mongo.exe='$MONGOD'/' test.cfg
+    - cat test.cfg
     - ant test
 
 #after_success:
