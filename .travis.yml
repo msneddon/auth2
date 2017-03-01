@@ -30,7 +30,7 @@ script:
     # If there are # in the mongod path, this will fail.
     - sed -i "s#^test.mongo.exe.*#test.mongo.exe=$MONGOD#" test.cfg
     - mkdir temp_test_dir
-    - sed -i "s#^test.temp.dir.*#test.temp.dir=temp_test_dir#" test.cfg
+    - sed -i "s#^test.temp.dir=.*#test.temp.dir=temp_test_dir#" test.cfg
     - cat test.cfg
     - ant test
 
